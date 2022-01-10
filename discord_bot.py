@@ -34,7 +34,7 @@ def main():
             embedVar.add_field(name="\u200B", value="\u200B" , inline=False)
             embedVar.add_field(name=essensliste[8] + "     🌖🎉", value=essensliste[9] + "\n", inline=False)
             embedVar.set_footer(text="Mensa Bot by Oreok", icon_url="https://avatars.githubusercontent.com/u/20826515?s=400&u=d1ccbf0cabd8e8e1e70d879e9f21a4d2c95406fc&v=4")
-            embedVar.timestamp = datetime.now()
+            embedVar.timestamp = datetime.utcnow()
             await message.channel.send(embed=embedVar)
 
         elif message.content == "!mensa2":
@@ -50,7 +50,7 @@ def main():
             embedVar2.add_field(name="\u200B", value="\u200B" , inline=False)
             embedVar2.add_field(name=essensliste[8] + "     🌖🎉", value=essensliste[9] + "\n", inline=False)
             embedVar2.set_footer(text="Mensa Bot by Oreok", icon_url="https://avatars.githubusercontent.com/u/20826515?s=400&u=d1ccbf0cabd8e8e1e70d879e9f21a4d2c95406fc&v=4")
-            embedVar2.timestamp = datetime.now()
+            embedVar2.timestamp = datetime.utcnow()
             await message.channel.send(embed=embedVar2)
             
     client.run(config1["Discord_Bot_Token"])
